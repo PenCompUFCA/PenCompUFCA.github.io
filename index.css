@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 743px)
+{
+    .body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #090240;
+        margin: 0;
+        padding: 0vw;
+        z-index: 1;
+    }
+    .logo {
+        padding-left: 6vw;
+        width: 17vw;
+    }
+    .button {
+        display: flex;
+        flex-direction:column;
+        align-items: space-around;
+        cursor: pointer;
+        margin-right: 8vw;
+        padding: 2vw 2vw;
+        border-radius: 25%;
+        height: auto;
+        background: #3533CD;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 40px;
+        height: 7px;
+        background-color: #fff;
+        margin: 4px;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        transform: translate(0, 15px) rotate(41deg);
+    }
+    .change .bar2 {opacity: 0;}
+    .change .bar3 {
+        transform: translate(0, -15px) rotate(-41deg);
+    }
+    .menu {
+        position: absolute;
+        display: none;
+        width: 100%;
+        top: 17vw;
+        background-color: #3533CD;
+        font-size: 2em;
+        border-bottom-left-radius: 12%;
+        border-bottom-right-radius: 12%;
+        text-align: center;
+        opacity: 0;
+        transform: scale(0);
+        transition: .2s ease-in-out, .2s ease transform;
+        z-index: 0;
+    }
+    .menu button {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        text-decoration: underline;
+        margin-bottom: 2vw;
+        font-size: 1em;
+        border: none;
+        color: white;
+        background-color: #3533CD;
+        width: 94%;
+        padding: 1vw;
+        border-radius: 15%;
+        text-align: left;
+    }
+    .menu button:hover {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        text-decoration: underline;
+        margin-bottom: 2vw;
+        font-size: 1em;
+        border: none;
+        color: white;
+        background-color: #2725b9;
+        width: 94%;
+        padding: 1vw;
+        text-align: left;
+        transition: .2s ease-in-out;
+    }
+
+    .container_atual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 126vw;
+        margin: 5% 5% 5% 5%;
+        background-image: url("Images/palestra.png");
+        background-color: #d9d9d9;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        border-radius: 7%/5%;
+        border: 2px solid #2725b9;
+    }
+    .container_atual h3 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        color:#090240;
+        font-size: 6vw;
+        left: 9vw;
+        top: 29vw;
+    }
+    .container_atual .inscricao1 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        color:#fff;
+        background-color: #d9d9d9;
+        border: 3px solid rgb(16, 8, 81);
+        font-size: 4vw;
+        font-weight: bolder;
+        left: auto;
+        top: 108vw;
+        border-radius: 8%/30%;
+        padding: 5% 30%;
+        background: hsla(241, 67%, 44%, 1);
+        background: linear-gradient(135deg, hsla(241, 67%, 44%, 1) 0%, hsla(241, 61%, 50%, 1) 29%, hsla(247, 82%, 24%, 1) 100%);
+        background: -moz-linear-gradient(135deg, hsla(241, 67%, 44%, 1) 0%, hsla(241, 61%, 50%, 1) 29%, hsla(247, 82%, 24%, 1) 100%);
+        background: -webkit-linear-gradient(135deg, hsla(241, 67%, 44%, 1) 0%, hsla(241, 61%, 50%, 1) 29%, hsla(247, 82%, 24%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2725B9", endColorstr="#3533CD", GradientType=1 );
+        
+        transition: ease-in-out .2s;
+    }
+    .container_atual .inscricao1:hover {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        color:#fff;
+        background-color: #d9d9d9;
+        border: 3px solid rgb(16, 8, 81);
+        font-size: 4vw;
+        font-weight: bolder;
+        left: auto;
+        top: 108vw;
+        border-radius: 8%/30%;
+        padding: 5% 30%;
+        background: hsla(241, 67%, 44%, 1);
+        background: linear-gradient(135deg, hsla(241, 67%, 44%, 1) 0%, hsla(241, 61%, 50%, 1) 29%, hsla(247, 82%, 24%, 1) 100%);
+        background: -moz-linear-gradient(135deg, hsla(241, 67%, 44%, 1) 0%, hsla(241, 61%, 50%, 1) 29%, hsla(247, 82%, 24%, 1) 100%);
+        background: -webkit-linear-gradient(135deg, hsla(241, 67%, 44%, 1) 0%, hsla(241, 61%, 50%, 1) 29%, hsla(247, 82%, 24%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2725B9", endColorstr="#3533CD", GradientType=1 );
+        box-shadow: 0 9px rgb(16, 8, 81);
+        transform: translateY(-2px);
+        transition: ease-in-out .2s;
+    }
+    .container_atual .inscricao1:active {
+        background-color: #090240;
+        box-shadow: 0 5px rgb(16, 8, 81);
+        transform: translateY(4px);
+        transition: ease-in-out .05s;
+    }
+    .container_atual .saibamais1 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        color:#090240;
+        background-color: #d9d9d9;
+        border: 0.4vw solid #090240;
+        font-size: 4vw;
+        font-weight: bolder;
+        left: auto;
+        top: 130vw;
+        border-radius: 8%/30%;
+        padding: 5% 30%;
+        transition: ease-in-out .2s;
+    }
+    .container_atual .saibamais1:hover {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        color:#090240;
+        background-color: #d9d9d9;
+        border: 3px solid rgb(16, 8, 81);
+        font-size: 4vw;
+        font-weight: bolder;
+        left: auto;
+        top: 130vw;
+        border-radius: 8%/30%;
+        padding: 5% 30%;
+        box-shadow: 0 9px rgb(16, 8, 81);
+        transform: translateY(-6px);
+        transition: ease-in-out .2s;
+    }
+    .container_atual .saibamais1:active {
+        background-color: #c1c1c1;
+        box-shadow: 0 5px rgb(16, 8, 81);
+        transform: translateY(2px);
+        transition: ease-in-out .05s;
+    }
+    .container_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18vw;
+        width: 100%;
+        height: 126vw;
+        background-image: url("Images/equipe_main.png");
+        background-color: #d9d9d9;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        border-radius: 7%/5%;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+    }
+    .container_info h3 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        top: 153.8vw;
+        width: 100%;
+        text-align: center;
+        font-size: 9vw;
+        color: white;
+        background:#090240;
+        border-radius: 10%/80%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+    .container_info ul {
+        list-style-position: outside;
+        left: 0;
+    }
+    .container_info #txt1 {
+        position: absolute;
+        left: 9vw;
+        top: 220vw;
+        font-family: 'Poppins', sans-serif;
+        width: 85%;
+        text-align: justify;
+        font-size: 3.6vw;
+        color: #090240;
+    }
+    .container_info #txt2 {
+        position: absolute;
+        left: 9vw;
+        top: 243vw;
+        font-family: 'Poppins', sans-serif;
+        width: 85%;
+        text-align: justify;
+        font-size: 3.6vw;
+        color: #090240;
+    }
+    .container_info li b {
+        color: #0a0896
+    }
+
+    .contatos {
+        display: flex;
+        margin: 0% 5%;
+        margin-top: 4vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        font-size: 5vw;
+        color: #090240;
+    }
+    .contatos img {
+        position: absolute;
+        top: 306vw;
+        width: 11vw;
+    }
+    .contatos ul {
+        list-style: none;
+        line-height: 11vw;
+    }
+    .contatos li span {
+        font-size: 2.4vw;
+        text-decoration: underline;
+        cursor:pointer;
+    }
+    .contatos li a {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .contatos li a:visited {
+        text-decoration: underline;
+        color: #0a0896;
+    }
+    .contatos #zero {
+        position: absolute;
+        top: 307vw;
+        width: 11vw;
+    }
+    .contatos #one {
+        position: absolute;
+        top: 320vw;
+        width: 10vw;
+    }
+    .contatos #two {
+        position: absolute;
+        top: 331vw;
+        width: 10vw;
+    }
+
+
+
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        height: 13vw;
+        background-color: #090240;
+        color: white;
+    }
+    footer img {
+        width: 14vw;
+    }
+    footer p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vw;
+        opacity: .8;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="icon" type="image/x-icon" href="pencomp.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>PenComp - Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="Images/pencomp_white.png" alt="Logo PenComp" class="logo">
+        <div class="button" id="dropdown" onclick="dropDown(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <button>Início</button>
+                </li>
+                <li>
+                    <button>Sobre</button>
+                </li>
+                <li>
+                    <button>Eventos</button>
+                </li>
+                <li>
+                    <button>Contatos</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container_atual">
+        <h3>Titulo do evento</h3>
+        <button class="inscricao1">Inscreva-se</button>
+        <button class="saibamais1">Saiba mais</button>
+    </div>
+    <div class="container_info">
+        <h3>QUEM SOMOS</h3>
+        <ul>
+            <li id="txt1">Somos um projeto de extensão da Universidade Federal do Cariri, <b>dedicados a compartilhar conhecimento e empoderar nossa comunidadeatravés da educação.</b></li>
+            <li id="txt2">Temos como objetivo <b>promover diferentes atividades didáticas relacionadas ao pensamento computacional</b>, tais como fundamentos de programação de computadores e educação maker, <b>junto aos alunos do Ensino Fundamental e Médio da rede pública da região</b>, estimulando-os a utilizar esse conhecimento para resolver problemas da sua realidade.</li>
+        </ul>
+    </div>
+    <div class="container_eventos">
+
+    </div>
+    <div class="contatos">
+        <ul>
+            <img src="Images/email.png" alt="E-MAIL" id="zero">
+            <img src="Images/whatsapp.png" alt="E-MAIL" id="one">
+            <img src="Images/instagram.png" alt="E-MAIL" id="two">
+            <li>Entre em contato conosco:</li>
+            <li>⠀⠀⠀⠀E-MAIL:<span>  pensamento.computacional.ufca@gmail.com</span></li>
+            <li>⠀⠀⠀⠀Whatsapp: <a href="">(81) 91234-5678</a></li>
+            <li>⠀⠀⠀⠀Instagram: <span onclick="insta()">instagram.com/pcomputacionalufca</span></li>
+        </ul>
+    </div>
+    <footer>
+        <img src="Images/pencomp_white.png" alt="Logo PenComp">
+        <p onclick="location.href='https://www.youtube.com/watch?v=a3Z7zEc7AXQ'">PENSAMENTO COMPUTACIONAL &copy</p>
+        <img src="Images/logo_ufca.png" alt="Logo UFCA">
+    </footer>
+</body>
+</html>
